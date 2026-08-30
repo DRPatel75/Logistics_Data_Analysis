@@ -42,3 +42,48 @@ notebooks/
 src/
 reports/
 screenshots/
+
+
+
+## Week 2 - Data Collection, Cleaning and Preprocessing
+
+This week focuses on preparing the Brazilian E-Commerce Public Dataset
+by Olist for logistics analysis.
+
+### Data Collection
+The project uses publicly available Brazilian e-commerce logistics data
+containing orders, products, customers, sellers, payments and reviews.
+
+### Data Cleaning
+The following preprocessing operations were performed:
+
+- Dataset inspection
+- Missing value analysis
+- Duplicate detection
+- Date conversion
+- Invalid delivery-time detection
+- Delivery-time calculation
+- Delivery-delay calculation
+- On-time delivery classification
+- Product measurement imputation
+- Product category handling
+- Outlier detection
+- Dataset merging
+
+### Processed Dataset
+
+The cleaned dataset is stored in:
+
+data/processed/olist_logistics_cleaned.csv
+
+### Key Logistics Variables
+
+- Delivery time
+- Delivery delay
+- On-time delivery
+- Product price
+- Freight value
+- Total item cost
+- Customer location
+- Seller location
+- Product category
