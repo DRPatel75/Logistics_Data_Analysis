@@ -87,3 +87,81 @@ data/processed/olist_logistics_cleaned.csv
 - Customer location
 - Seller location
 - Product category
+
+## Week 4: Predictive Modeling and Optimization
+
+### Objective
+
+Week 4 focuses on applying predictive modeling and optimization
+techniques to the logistics dataset to forecast delivery time and
+identify opportunities for improving logistics operations.
+
+### Prediction Target
+
+The target variable is:
+
+- `delivery_time_days`
+
+### Features Used
+
+Numerical features:
+
+- `price`
+- `freight_value`
+- `total_item_cost`
+- `product_weight_g`
+- `product_length_cm`
+- `product_height_cm`
+- `product_width_cm`
+- `price_normalized`
+- `freight_normalized`
+
+Categorical features:
+
+- `customer_state`
+- `seller_state`
+- `product_category_name`
+
+### Models
+
+Four regression models were evaluated:
+
+1. Linear Regression
+2. Decision Tree Regression
+3. Random Forest Regression
+4. Gradient Boosting Regression
+
+### Evaluation Metrics
+
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+
+### Best Model
+
+Random Forest Regression achieved the strongest performance.
+
+- MAE: 5.0511 days
+- RMSE: 8.0400 days
+- R²: 0.2483
+
+### Optimization Analysis
+
+The project analyzes:
+
+- Delivery time
+- Delivery delays
+- Late-delivery rates
+- Freight costs
+- Regional logistics performance
+
+Priority regions were identified using above-median late-delivery rates
+and above-median freight costs.
+
+### Recommendations
+
+- Focus operational improvements on high late-delivery regions.
+- Investigate high freight-cost regions for transportation optimization.
+- Consider geographic factors when planning seller allocation.
+- Prioritize orders predicted to require longer delivery times.
+- Improve resource allocation in regions with operational challenges.
